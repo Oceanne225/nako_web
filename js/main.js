@@ -146,7 +146,7 @@
     });
 
 
-    // Testimonials carousel
+    // temoignages carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,

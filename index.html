@@ -83,14 +83,14 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav me-auto">
                     <a href="index.html" class="nav-item nav-link active">Accueil</a>
-                    <a href="appropos.html" class="nav-item nav-link">Appropos</a>
+                    <a href="À propos.html" class="nav-item nav-link">À propos</a>
                     <a href="services.html" class="nav-item nav-link">Services</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu fade-up m-0">
                             <a href="reservation.html" class="dropdown-item">Reservation</a>
                             <a href="partenaires.html" class="dropdown-item">Partenaires</a>
-                            <a href="avis-clients.html" class="dropdown-item">Avis-clients</a>
+                            <a href="temoignanges.html" class="dropdown-item">Temoignages</a>
                             <a href="404.html" class="dropdown-item">404 Page</a>
                         </div>
                     </div>
@@ -194,7 +194,7 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase">Appropos de nous</h6>
+                    <h6 class="text-secondary text-uppercase">À propos de nous</h6>
                     <h1 class="mb-4">Nous fournissons des service de nettoyage adapté à chaque personne</h1>
                     <p class="mb-4">Nous vous offrons des services de nettoyage, de lessive et de lavage de voiture, 
                         à domicile ou en entreprise, avec un suivi en temps réel et une réservation en ligne rapide et sécurisée. Profitez d'une expérience moderne et personnalisée, adaptée à vos besoins, 
@@ -322,73 +322,51 @@
 
     <!-- Booking Start -->
     <div class="container-fluid my-5 px-0">
-        <div class="video wow fadeInUp" data-wow-delay="0.1s">
-            <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                <span></span>
-            </button>
+    <div class="video wow fadeInUp" data-wow-delay="0.1s">
+        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="URL_DE_VOTRE_VIDEO_MP4" data-bs-target="#videoModal">
+            <span></span>
+        </button>
 
-            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content rounded-0">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <!-- 16:9 aspect ratio -->
-                            <div class="ratio ratio-16x9">
-                                <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                                    allow="autoplay"></iframe>
-                            </div>
-                        </div>
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Vidéo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div>
-            </div>
-
-            <h1 class="text-white mb-4">Service d'urgence</h1>
-            <h3 class="text-white mb-0">24 Heures 7 Jours par Semaines</h3>
-        </div>
-        <div class="container position-relative wow fadeInUp" data-wow-delay="0.1s" style="margin-top: -6rem;">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="bg-light text-center p-5">
-                        <h1 class="mb-4">Book For A Service</h1>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Selectionnez un Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control border-0 datetimepicker-input"
-                                            placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Request"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
-                                </div>
-                            </div>
-                        </form>
+                    <div class="modal-body">
+                        <!-- 16:9 aspect ratio -->
+                        <div class="ratio ratio-16x9">
+                            <video class="embed-responsive-item" id="video" controls allowfullscreen>
+                                <source src="" type="video/mp4">
+                                Votre navigateur ne supporte pas la vidéo.
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<script>
+    var modal = document.getElementById('videoModal');
+    modal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+        var videoSrc = button.getAttribute('data-src');
+        var videoElement = modal.querySelector('video');
+        videoElement.querySelector('source').src = videoSrc;
+        videoElement.load();
+        videoElement.play(); // Démarre la lecture de la vidéo
+    });
+
+    modal.addEventListener('hidden.bs.modal', function () {
+        var videoElement = modal.querySelector('video');
+        videoElement.pause();
+        videoElement.currentTime = 0; // Remet la vidéo au début
+        videoElement.querySelector('source').src = '';
+    });
+</script>
     <!-- Booking End -->
 
 
@@ -407,8 +385,8 @@
                         </div>
                         <div class="team-text">
                             <div class="bg-light">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
+                                <h5 class="fw-bold mb-0">Nom et prenoms</h5>
+                                <small>Poste</small>
                             </div>
                             <div class="bg-primary">
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -425,8 +403,8 @@
                         </div>
                         <div class="team-text">
                             <div class="bg-light">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
+                                <h5 class="fw-bold mb-0">Nom et prenoms</h5>
+                                <small>Poste</small>
                             </div>
                             <div class="bg-primary">
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -443,8 +421,8 @@
                         </div>
                         <div class="team-text">
                             <div class="bg-light">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
+                                <h5 class="fw-bold mb-0">Nom et prenoms</h5>
+                                <small>Poste</small>
                             </div>
                             <div class="bg-primary">
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -461,8 +439,8 @@
                         </div>
                         <div class="team-text">
                             <div class="bg-light">
-                                <h5 class="fw-bold mb-0">Full Name</h5>
-                                <small>Designation</small>
+                                <h5 class="fw-bold mb-0">Nom et prenoms</h5>
+                                <small>Poste</small>
                             </div>
                             <div class="bg-primary">
                                 <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -488,7 +466,7 @@
             <div class="owl-carousel testimonial-carousel position-relative wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">L'équipe de nettoyage a fait un travail impeccable dans un temps record. Mon espace est parfaitement propre. Je recommande sans hésitation !</p>
                     </div>
                     <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
                     <div class="mb-2">
@@ -498,12 +476,12 @@
                         <small class="fa fa-star text-secondary"></small>
                         <small class="fa fa-star text-secondary"></small>
                     </div>
-                    <h5 class="mb-1">Nom du Client</h5>
-                    <p class="m-0">Profession</p>
+                    <h5 class="mb-1">Henri Konan</h5>
+                    <p class="m-0">Nettoyage domicile</p>
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Mes vêtements sont revenus impeccables, bien pliés et avec une fraîcheur incroyable. Je recommande à 100 % !</p>
                     </div>
                     <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
                     <div class="mb-2">
@@ -513,12 +491,12 @@
                         <small class="fa fa-star text-secondary"></small>
                         <small class="fa fa-star text-secondary"></small>
                     </div>
-                    <h5 class="mb-1">Nom duClient</h5>
-                    <p class="m-0">Profession</p>
+                    <h5 class="mb-1">Amandine Diarassouba</h5>
+                    <p class="m-0">Lessive</p>
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Les plats sont délicieux et préparés avec soin. Chaque repas est un vrai plaisir, et les portions sont généreuses. Service fiable et toujours à l’écoute de mes préférences. Je recommande vivement !</p>
                     </div>
                     <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
                     <div class="mb-2">
@@ -528,12 +506,12 @@
                         <small class="fa fa-star text-secondary"></small>
                         <small class="fa fa-star text-secondary"></small>
                     </div>
-                    <h5 class="mb-1">Nom du Client</h5>
-                    <p class="m-0">Profession</p>
+                    <h5 class="mb-1">Achi Romaric</h5>
+                    <p class="m-0">Cuisine impeccable</p>
                 </div>
                 <div class="testimonial-item text-center">
                     <div class="testimonial-text bg-light text-center p-4 mb-4">
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                        <p class="mb-0">Ils m'ont aidé à trouver exactement ce dont j'avais besoin et se sont occupés de tout avec rapidité et efficacité. Les produits sont arrivés en parfait état, et le suivi était impeccable. Je suis vraiment satisfait !</p>
                     </div>
                     <img class="bg-light rounded-circle p-2 mx-auto mb-2" src="img/testimonial-4.jpg" style="width: 80px; height: 80px;">
                     <div class="mb-2">
@@ -543,8 +521,8 @@
                         <small class="fa fa-star text-secondary"></small>
                         <small class="fa fa-star text-secondary"></small>
                     </div>
-                    <h5 class="mb-1">Client Name</h5>
-                    <p class="m-0">Profession</p>
+                    <h5 class="mb-1">Bernadette Tiapo</h5>
+                    <p class="m-0">Achat</p>
                 </div>
             </div>
         </div>
@@ -556,7 +534,7 @@
         <div class="container">
             <div class="text-center mx-auto mb-5" style="max-width: 500px;">
                 <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Nos Forfaits de Nettoyage</h5>
-                <h1 class="display-4">Choisissez votre forfait</h1>
+                <h1 class="display-4">Prix Par Catégorie</h1>
             </div>
             <div class="owl-carousel price-carousel position-relative" style="padding: 0 45px 45px 45px;">
                 <div class="bg-light rounded text-center">
@@ -565,15 +543,16 @@
                         <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
                             <h3 class="text-white">Nettoyage Standard</h3>
                             <h1 class="display-4 text-white mb-0">
-                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">FCFA</small>10.000<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">FCFA</small>5.000<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Jour</small>
                             </h1>
                         </div>
                     </div>
                     <div class="text-center py-5">
-                        <p>Nettoyage hebdomadaire</p>
+                        <p>Studios</p>
                     <p>Nettoyage des sols</p>
                     <p>Pas de nettoyage de vitres</p>
                     <p>Pas de service de blanchisserie</p>
+                    <p>5000f</p>
                         <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Choisir</a>
                     </div>
                 </div>
@@ -583,15 +562,16 @@
                         <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
                             <h3 class="text-white">Nettoyage Premium</h3>
                             <h1 class="display-4 text-white mb-0">
-                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">FCFA</small>10.000<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">FCFA</small>15.000<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Jour</small>
                             </h1>
                         </div>
                     </div>
                     <div class="text-center py-5">
-                        <p>Nettoyage hebdomadaire</p>
+                        <p>Chambre Salon</p>
                     <p>Nettoyage des sols et des vitres</p>
-                    <p>Blanchisserie incluse</p>
+                    <p>Lessive incluse</p>
                     <p>Pas de repassage</p>
+                    <p>15000f</p>
                     <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Choisir</a>
                     </div>
                 </div>
@@ -599,17 +579,18 @@
                     <div class="position-relative">
                         <img class="img-fluid rounded-top" src="img/3.jpg" alt="">
                         <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                            <h3 class="text-white">Nettoyage Standard</h3>
+                            <h3 class="text-white">Nettoyage Standard+</h3>
                             <h1 class="display-4 text-white mb-0">
-                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">FCFA</small>10.000<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">FCFA</small>12.000<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Jour</small>
                             </h1>
                         </div>
                     </div>
                     <div class="text-center py-5">
-                        <p>Nettoyage hebdomadaire</p>
+                        <p>Chambre salon ou Studios</p>
                         <p>Nettoyage des sols</p>
                         <p>Pas de nettoyage de vitres</p>
-                        <p>Pas de service de blanchisserie</p>
+                        <p>Service de blanchisserie</p>
+                        <p>12000f</p>
                         <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Choisir</a>
                     </div>
                 </div>
@@ -617,17 +598,18 @@
                     <div class="position-relative">
                         <img class="img-fluid rounded-top" src="img/4.jpg" alt="">
                         <div class="position-absolute w-100 h-100 top-50 start-50 translate-middle rounded-top d-flex flex-column align-items-center justify-content-center" style="background: rgba(29, 42, 77, .8);">
-                            <h3 class="text-white">Nettoyage Premium</h3>
+                            <h3 class="text-white">Nettoyage Premium +</h3>
                             <h1 class="display-4 text-white mb-0">
-                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">FCFA</small>20.000<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">FCFA</small>25.000<small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Jour</small>
                             </h1>
                         </div>
                     </div>
                     <div class="text-center py-5">
-                        <p>Nettoyage quotidien</p>
+                        <p>Nettoyage 2 chambres salon</p>
                         <p>Nettoyage complet (sols, vitres)</p>
                         <p>Blanchisserie et repassage inclus</p>
                         <p>Services supplémentaires à la demande</p>
+                        <p>25000f</p>
                         <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Choisir</a>
                     </div>
                 </div>
@@ -647,7 +629,7 @@
                     <h4 class="text-light mb-4">Address</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Angre, Abidjan, Côte d'Ivoire</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+225 07-06-0054-70</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@nakoci.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -672,7 +654,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <p>Inscrivez-vous pour recevoir conseils, dernières nouveautés et offres exclusives !</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
                         <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">S'inscrire</button>
